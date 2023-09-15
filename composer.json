@@ -1,0 +1,44 @@
+{
+    "name": "gourabsutradhar/secureimage",
+    "description": "A simple captcha package for laravel",
+    "license": "MIT",
+    "keywords": [
+        "captcha",
+        "security",
+        "laravel",
+        "bot"
+     ],
+    
+    "autoload": {
+        "psr-4": {
+            "Gourabsutradhar\\SecureImage\\": "src/"
+        },
+        "files": [
+             "src/functions.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Gourab Sutradhar"
+            
+        }
+    ],
+    "require": {
+        "php": "^7.2|^8.0",
+        "ext-gd": "*",
+        "illuminate/config": "~5|^6|^7|^8|^9|^10",
+        "illuminate/support": "~5|^6|^7|^8|^9|^10",
+        "illuminate/hashing": "~5|^6|^7|^8|^9|^10",
+        "illuminate/session": "~5|^6|^7|^8|^9|^10"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.11"
+    },
+    "extra":{
+        "laravel": {
+            "providers":[
+                "Gourabsutradhar\\SecureImage\\SecureImageServiceProvider"
+            ]
+        }
+    }
+}
