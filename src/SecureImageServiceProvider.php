@@ -33,7 +33,7 @@ class SecureImageServiceProvider extends ServiceProvider
         });
         //for web
         Validator::extend('secureimage_web', function ($attribute, $value, $parameters, $validator) {
-            return dd((new Secureimage)->verify($value, session('secureimage')));
+            return (new Secureimage)->verify($value, session('secureimage'));
         });
 
     }
