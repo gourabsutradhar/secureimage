@@ -30,11 +30,11 @@ class SecureImageServiceProvider extends ServiceProvider
         //example rule 'secureimage'=>'required|secureimage_rule:key,code'
         Validator::extend('secureimage_api', function ($attribute, $value, $parameters, $validator) {
             return (new Secureimage)->verify($value, $parameters[0]);
-        });
+        },'The :attribute field is wrong.');
         //for web
         Validator::extend('secureimage_web', function ($attribute, $value, $parameters, $validator) {
             return (new Secureimage)->verify($value, session('secureimage'));
-        });
+        },'The :attribute field is wrong.');
 
     }
 
