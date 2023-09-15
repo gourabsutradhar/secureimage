@@ -3,7 +3,7 @@ A captcha for laravel framework.
 # Setup
 Require this package with composer:
 ```
-composer require mews/captcha
+composer require gourabsutradhar/secureimage
 ```
 To use your own settings, publish config using the command
 ```
